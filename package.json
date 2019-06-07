@@ -1,0 +1,24 @@
+{
+  "name": "playcanvas-restapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-playcanvas": "^1.0.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "browser-sync": "^2.26.5",
+    "gulp-cache": "^1.1.1",
+    "gulp-changed": "^4.0.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-terser": "^1.2.0",
+    "run-sequence": "^2.2.1"
+  }
+}

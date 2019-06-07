@@ -1,0 +1,19 @@
+extends ./partial/_layout
+block vars
+	- var _title_str = 'タイトル'; // タイトルタグ
+	- var _desc_str = 'でぃすくりぷしょん'; // descriptions
+	- var _keys_str = 'きーわーど'; // keywords
+	- var _page_category = 'index'; // ページのカテゴリー
+	- var _page_id = _page_category + '-page'; // ページカテゴリーの後ろに付与してIDとして使う
+	- var DIR_IMG_PAGE = DIR_IMG + _page_category; // イメージへのリンク
+	//- var DIR_CSS = "/css/"; // cssのリンク
+	//- var DIR_JS = "/js/"; // jsのリンク
+block link
+	//- link(rel='stylesheet', href=DIR_CSS + _page_category + '.css')
+block body
+	section.content.is-show
+		.content__inner
+
+block script
+	//- ページ固有のjs
+	//- script(src=DIR_JS + _page_category + '.min.js')

@@ -1,0 +1,40 @@
+- var BASE_DOMAIN = "/";
+- var DIR_IMG = "/img/";
+- var DIR_IMG_CMN = "/img/common/"; // イメージへのリンク
+- var DIR_CSS = "/css/";
+- var DIR_JS = "/js/";
+block vars
+- if(!playcanvas) {
+	doctype html
+	html(lang='ja')
+- }
+	- if(!playcanvas) {
+		head(prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#')
+			meta(charset='utf-8')
+			title #{_title_str}
+			meta(http-equiv='X-UA-Compatible', content='IE=edge')
+			meta(name='description', content='_desc_str')
+			meta(name='keywords', content='_keys_str')
+			meta(name='viewport', content='width=device-width,user-scalable=yes')
+			link(rel='stylesheet', href=DIR_CSS + 'master.css')
+
+			block link
+	- }
+	- if(!playcanvas) {
+		body
+	- }
+		.wrapper
+
+			main.main
+				.container
+					block body
+
+
+	- if(!playcanvas) {
+		//- 全体共通のjs
+		script(src= DIR_JS + 'libs.min.js')
+		script(src= DIR_JS + 'functions.min.js')
+		block script
+	- }
+
+

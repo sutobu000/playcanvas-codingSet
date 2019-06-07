@@ -1,0 +1,18 @@
+@charset 'utf-8'
+
+// -------------------------------------
+// 開発用
+// ------------------------------------- */
+@import import/_vars
+
+$DIR_IMG_PAGE: "#{$DIR_IMG}/index/"
+
+// -------------------------------------
+// 下層ページのsassをまとめる
+// ------------------------------------- */
+@import import/index/_style
+
+// スマートフォン
+@media screen and (max-width: #{$break_point}px)
+  @import import/index/_style_sp
+
