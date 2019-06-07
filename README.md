@@ -23,7 +23,6 @@ REST API経由でローカルのコードエディタからPlayCanvasにアセ�
 
 ---
 
-↓REST APIのAccessTokenなどの設定など詳細は以下から↓
-[gulp-playcanvas](https://github.com/yushimatenjin/gulp-playcanvas)
+REST APIのAccessTokenなどの設定など詳細は以下から → [gulp-playcanvas](https://github.com/yushimatenjin/gulp-playcanvas)
 
 
